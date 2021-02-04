@@ -19,7 +19,7 @@ class PostCards extends Component {
   render() {
 
     const CARDS = this.state.posts.reverse().map((post, index) =>
-      index < 8 ? <PostCard title={post.title} content={post.content} imgURL={post.imgURL} author={post.author} key={index} /> : null
+      index < 8 ? <PostCard title={post.title} content={post.content} imgURL={post.imgURL} author={post.author} id={post._id}key={index} /> : null
     )
 
     return (
