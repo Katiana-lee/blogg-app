@@ -6,7 +6,7 @@ import Search from '../../components/Search/Search'
 import { aAZ, aZA, tAZ, tZA, mostRecent, leastRecent } from "../../utils/sort"
 import Sort from '../../components/Sort/Sort'
 import Layout from '../../components/shared/Layout/Layout'
-import { getPosts } from '../../services/products'
+import { getPosts } from '../../services/posts'
 
 const Posts = (props) => {
   const [allPosts, setAllPosts] = useState([])
