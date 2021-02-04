@@ -11,9 +11,16 @@ const compareKey = (key) => (a, b) => {
 // one liner
 // const compareKey = key => (a, b) => a[key] == b[key]? (a[key] < b[key] ? -1 : 1) : 0
 
-export const AZ = (arr) => arr.sort(compareKey("name"));
-export const ZA = (arr) => arr.sort(compareKey("name")).reverse();
+// compare blog post authors
+export const aAZ = (arr) => arr.sort(compareKey("author"));
+export const aZA = (arr) => arr.sort(compareKey("author")).reverse();
+
+// compare blog post titles
+export const tAZ = (arr) => arr.sort(compareKey("title"));
+export const tZA = (arr) => arr.sort(compareKey("title")).reverse();
 
 // compare timestamps between blog posts
-// export const mostRecent = arr => arr.sort((a, b) => parseInt(a.price) - parseInt(b.price))
-// export const leastRecent = arr => arr.sort((a, b) => parseInt(b.price) - parseInt(a.price))
+export const mostRecent = (arr) =>
+  arr.sort((a, b) => a.updatedAt.localeCompare(b.updatedAt));
+export const leastRecent = (arr) =>
+  arr.sort((a, b) => b.updatedAt.localeCompare(a.updatedAt));
