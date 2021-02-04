@@ -65,7 +65,7 @@ const PostEdit = (props) => {
                         className="input-title"
                         placeholder='Title'
                         value={post.title}
-                        name='name'
+                        name='title'
                         required
                         autoFocus
                         onChange={handleChange}
