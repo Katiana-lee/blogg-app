@@ -49,7 +49,7 @@ const Posts = (props) => {
   }
 
   const handleSearch = event => {
-    const newQueriedPosts = allPosts.filter(post => post.name.toLowerCase().includes(event.target.value.toLowerCase()))
+    const newQueriedPosts = allPosts.filter(post => post.title.toLowerCase().includes(event.target.value.toLowerCase()))
     setQueriedPosts(newQueriedPosts, () => handleSort(sortType))
   }
 
