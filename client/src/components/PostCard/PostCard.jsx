@@ -16,7 +16,10 @@ const PostCard = (props) => {
   return (
     <div className="post-card">
       <Link className="card" to={`/posts/${props.id}`}>
+<<<<<<< HEAD
+=======
         <img className="post-card-image" src={props.imgURL} alt={props.title} />
+>>>>>>> a7fe682e72eb6cd862ad2780c1afa7fc94de164b
         <div className="blog-title">{props.title}</div>
         <div className="userInfo">
           <div className="dateString">{dateString}</div>

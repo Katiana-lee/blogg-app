@@ -1,0 +1,51 @@
+.post {
+  background: linear-gradient(45deg, #eddbff, transparent);
+  font-family: "Crimson Text";
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 120px;
+  transition: 250ms all;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+.post:hover {
+  transform: scale(1.02);
+  opacity: .9;
+  background-color: greenyellow;
+  
+}
+
+.post-title {
+  font-size: 45px;  
+  text-align: center;
+}
+
+.post-image {
+  width: 300px;
+}
+
+.post-content {
+  font-size: 24px;
+  padding: 10px 30px;
+  margin: 10px;
+  text-align: center;
+}
+
+.author {
+  font-size: 18px;
+  
+}
+
+@media (max-width: 500px) {
+  .post {
+      width: 100%;
+      margin-bottom: 20px;
+  }
+  .post-image {
+      width: 180px;
+      margin: 15px;
+      padding: 10px;
+  }
+}
