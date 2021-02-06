@@ -1,22 +1,24 @@
-.product-detail {
+.post-detail {
+  font-family: "Crimson Text";
   display: flex;
-  padding: 100px;
-  padding-top: 80px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #d1d1d1; */
 }
 
 .detail {
-  display: flex;
-  flex-direction: column;
-  line-height: 1.6;
+ padding: 50px;
 }
 
 .title {
-  font-size: 64px;
+  font-size: 40px;
   letter-spacing: 1px;
   padding: 5px;
 }
 
 .author {
+  text-align: center;
   font-size: 28px;
 }
 
@@ -25,9 +27,9 @@
   letter-spacing: .9px;
 }
 
-.product-detail-image {
+.post-detail-image {
   width: 500px;
-  padding: 0 40px;
+  padding: 40px;
 }
 
 .button-container {
@@ -37,33 +39,36 @@
 
 .edit-button, .delete-button {
   font-size: 22px;
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
+  font-family: "Crimson Text";
+  /* text-align: center; */
   height: 40px;
   width: 20%;
   align-self: center;
   margin-top: 40px;
-  background-color: black;
-  color: white;
+
   border: none;
   box-shadow: 2px 2px 10px 2px #CECECE;
   cursor: pointer;
+  
+}
+.edit-button:hover, .delete-button:hover{
+  transform: scale(1.02);
+  opacity: .9;
+  color: black;
+  background-color: greenyellow;
 }
 
-.edit-link {
-  color: white;
-}
 
 @media (max-width: 1024px) {
   .name {
       font-size: 32px;
   }
-  .product-detail-image {
-      width: 500px;
+  .post-detail-image {
+      width: 350px;
       margin-top: -100px;
       padding: 10px;
   }
-  .product-detail {
+  .post-detail {
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -72,24 +77,20 @@
 }
 
 @media (max-width: 800px) {
-  .product-detail-image {
+  .post-detail-image {
       width: 300px;
       margin: 15px;
       padding: 10px;
   }
-  .product-detail {
+  .post-detail {
       padding: 0px;
       padding-top: 120px;
-      /* margin: 0px; */
-      /* display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center; */
+    
   }
   .button-container {
-      /* display: flex;
+      display: flex;
       justify-content: space-evenly;
-      padding-top: 0px; */
+      padding-top: 0px;
       padding: 20px;
       padding-bottom: 80px;
   }

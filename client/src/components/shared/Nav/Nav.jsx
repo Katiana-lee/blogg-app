@@ -7,7 +7,7 @@ const Nav = () => {
   return (
     <nav>
       <div className='nav'>
-        <NavLink className="logo" to='/'>Tobedetermined</NavLink>
+        <NavLink className="logo" to='/'>Cloud Random</NavLink>
         <div className="links">
                     <NavLink className="link" to="/posts">Posts</NavLink>
                     <NavLink className="link" to="/add-post">Add Post</NavLink>

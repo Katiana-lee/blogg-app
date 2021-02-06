@@ -1,0 +1,72 @@
+
+
+
+.nav {
+  
+    font-family: "Crimson Text";
+    background: linear-gradient(45deg, #eddbff, transparent);
+    display: flex;
+    padding: 5px;
+    width: 100%;
+    justify-content: space-between;
+    text-decoration: none;
+    box-shadow: 1px 1px 1px .3px #CECECE;
+    font-weight: 100;
+    font-weight: 900;
+
+}
+.nav:hover {
+  transform: scale(1.02);
+  opacity: .9;
+  background-color: greenyellow;
+   
+}
+
+.logo {
+  font-family: "Crimson Text";
+    text-align: center;
+    font-weight: bold;
+    font-size: 34px;
+    flex: 1;
+    max-width: 30vw;
+  
+}
+
+
+
+.links {
+    flex: 5;
+    max-width: 30vw;
+    align-items: center;
+    font-size: 25px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.link {
+    flex: 1;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+@media (max-width: 500px) {
+    nav {
+        width: 98%;
+    }
+    .logo {
+        max-width: 50%;
+    }
+    .links {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 50vw;
+    }
+    .link {
+        padding: 3px;
+    }
+}

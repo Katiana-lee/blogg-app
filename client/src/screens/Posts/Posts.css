@@ -1,30 +1,22 @@
-.products {
-  width: 90vw;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  padding: 40px;
-}
 
 .sort-container {
+  font-family: "Crimson Text";
+  /* border: dotted; */
   display: flex;
-  width: 83.5vw;
+  /* width: 83.5vw; */
   justify-content: flex-end;
-  margin: 20px;
+  align-content: center;
+  margin: 15px;
 }
 
 label {
   font-size: 18px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Crimson Text";
   font-weight: bold;
   padding-right: 10px;
 }
 
-select {
-  cursor:pointer;
-  border: none;
-  font-size: 18px;
-}
+
 
 @media (max-width: 500px) {
   .products {
