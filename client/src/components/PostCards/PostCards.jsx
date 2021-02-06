@@ -24,7 +24,7 @@ class PostCards extends Component {
 
     return (
       <div className="post-cards">
-        <div className="latest">LATEST</div>
+        {/* <div className="latest">LATEST</div> */}
         <div className="cards">
           {CARDS}
         </div>
